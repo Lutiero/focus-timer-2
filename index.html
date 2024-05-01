@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,18 +9,22 @@
   <body>
     <div id="app">
       <div class="timer-container">
-        <div class="timer">25:00</div>
-        <span>Play</span>
-        <span>Pause</span>
-        <span>+</span>
-        <span>-</span>
+        <div class="timer">
+          <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+          <span><i class="ph ph-play-circle" /></i></span>
+          <span><i class="ph ph-pause-circle"></i></span>
+          <span><i class="ph ph-plus"></i></span>
+          <span><i class="ph ph-minus"></i></span>
+        </div>
       </div>
 
       <div class="sounds-container">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+        <span><i class="ph ph-tree"></i></span>
+        <span><i class="ph ph-cloud-rain"></i></span>
+        <span><i class="ph ph-storefront"></i></span>
+        <span><i class="ph ph-campfire"></i></span>
       </div>
     </div>
     <script type="module" src="/main.js"></script>

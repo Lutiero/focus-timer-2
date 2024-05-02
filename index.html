@@ -13,19 +13,19 @@
         <div class="timer">
           <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
-        <div class="controls">
-          <span><i class="ph ph-play-circle" /></i></span>
-          <span><i class="ph ph-pause-circle"></i></span>
-          <span><i class="ph ph-plus"></i></span>
-          <span><i class="ph ph-minus"></i></span>
+        <div id="timer-controls" class="controls">
+          <span><i data-action="toggleRunning" class="ph ph-play-circle" /></i></span>
+          <span><i data-action="toggleRunning" class="ph ph-pause-circle"></i></span>
+          <span><i data-action="plusFiveSeconds" class="ph ph-plus"></i></span>
+          <span><i data-action="minorFiveSeconds" class="ph ph-minus"></i></span>
         </div>
       </div>
 
-      <div class="sounds-container">
-        <span><i class="ph ph-tree"></i></span>
-        <span><i class="ph ph-cloud-rain"></i></span>
-        <span><i class="ph ph-storefront"></i></span>
-        <span><i class="ph ph-campfire"></i></span>
+      <div id="sounds-controls" class="sounds-container">
+        <span><i data-action="playTreeSound" class="ph ph-tree"></i></span>
+        <span><i data-action="playRainSound" class="ph ph-cloud-rain"></i></span>
+        <span><i data-action="playCoffeHouseSound" class="ph ph-storefront"></i></span>
+        <span><i data-action="playFireSound" class="ph ph-campfire"></i></span>
       </div>
     </div>
     <script type="module" src="./js/main.js"></script>

@@ -28,11 +28,29 @@ export function reset() {
 }
 
 export function plusFiveSeconds() {
-  console.log("plusFiveSeconds function called");
+  state.minutes = Number(el.minutes.textContent);
+  state.seconds = Number(el.seconds.textContent);
+  if (state.seconds > 55) {
+    state.minutes += 1;
+    state.seconds = state.seconds - 60;
+    timer.updateDisplay();
+  }
+  state.seconds += 5;
+  timer.updateDisplay();
 }
 
 export function minusFiveSeconds() {
-  console.log("minusFiveSeconds function called");
+  state.minutes = Number(el.minutes.textContent);
+  state.seconds = Number(el.seconds.textContent);
+  state.seconds -= 5;
+  timer.updateDisplay();
+  if (state.seconds < 4) {
+    state.minutes -= 1;
+    timer.updateDisplay();
+  }
+
+  if ((state.seconds = 0)) return;
+  timer.updateDisplay();
 }
 
 export function playTreeSound() {

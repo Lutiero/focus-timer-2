@@ -44,7 +44,7 @@ export function minusFiveSeconds() {
   state.seconds = Number(el.seconds.textContent);
   state.seconds -= 5;
   timer.updateDisplay();
-  if (state.seconds < 4) {
+  if (state.seconds < 5) {
     state.minutes -= 1;
     timer.updateDisplay();
   }

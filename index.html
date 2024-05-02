@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Focus Timer 2.0</title>
@@ -11,11 +14,11 @@
     <div id="app">
       <div class="timer-container">
         <div class="timer">
-          <span id="minutes">25</span>:<span id="seconds">00</span>
+          <span id="minutes" data-action="set">25</span>:<span id="seconds" data-action="set">00</span>
         </div>
         <div id="timer-controls" class="controls">
           <span><i data-action="toggleRunning" class="ph ph-play-circle" /></i></span>
-          <span><i hidden data-action="toggleRunning" class="ph ph-stop-circle" /></i></span>
+          <span><i hidden data-action="stop" class="ph ph-stop-circle" /></i></span>
           <span><i data-action="toggleRunning" class="ph ph-pause-circle"></i></span>
           <span><i data-action="plusFiveSeconds" class="ph ph-plus"></i></span>
           <span><i data-action="minusFiveSeconds" class="ph ph-minus"></i></span>
@@ -25,7 +28,7 @@
       <div id="sounds-controls" class="sounds-container">
         <span><i data-action="playTreeSound" class="ph ph-tree"></i></span>
         <span><i data-action="playRainSound" class="ph ph-cloud-rain"></i></span>
-        <span><i data-action="playCoffeHouseSound" class="ph ph-storefront"></i></span>
+        <span><i data-action="playCoffeShopSound" class="ph ph-storefront"></i></span>
         <span><i data-action="playFireSound" class="ph ph-campfire"></i></span>
       </div>
     </div>
